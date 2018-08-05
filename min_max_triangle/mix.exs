@@ -8,7 +8,7 @@ defmodule MinMaxTriangle.MixProject do
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
       escript: [
-        main_module: MinMaxTriangle
+        main_module: MinMaxTriangle.Main
       ],
       deps: deps()
     ]
