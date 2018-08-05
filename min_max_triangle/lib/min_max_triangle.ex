@@ -1,18 +1,5 @@
 defmodule MinMaxTriangle do
 
-  def test_input(a) do
-    [[1] | test_input_internal(a - 1, [1])]
-  end
-
-  def test_input_internal(a, _) when a <= 0 do
-    []
-  end
-
-  def test_input_internal(a, l) do
-    new = l ++ [(List.last(l) + 1)]
-    [new | test_input_internal(a - 1, new)]
-  end
-
   def calculate(input, opt) do
     calculate_internal([], input, opt)
   end
